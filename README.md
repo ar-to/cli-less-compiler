@@ -9,7 +9,7 @@ git clone https://github.com/ar-to/cli-less-compiler.git
 
 npm install
 
-npm start or gulp
+npm start
 
 # to stop watch
 ctrl + C
