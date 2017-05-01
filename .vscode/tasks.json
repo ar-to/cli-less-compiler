@@ -1,0 +1,20 @@
+{
+    //used the following as guide for this setup: https://code.visualstudio.com/docs/languages/css
+
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    //"command": "lessc",
+    "command": "gulp",
+    "isShellCommand": true,
+    //"args": ["styles.less", "styles.css"],
+    "tasks": [
+        {
+            "taskName": "default",
+            "isBuildCommand": true,
+            "showOutput": "always",
+            "isBackground": true
+        }
+    ]
+    //"showOutput": "always"
+}
