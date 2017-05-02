@@ -32,6 +32,12 @@ To delete the dist folder with your main.css and any other css files inside dire
 npm run clean
 ```
 
+To delete only the dist folder and main.css
+
+```
+npm run clean:dist
+```
+
 This tool allows you to watch multiple main.less files inside a directory and compile just the file changed into a dist folder. The css file in the dist folder will be overwritten every time you compile a new less file in any other directory.
 
 ### Visual Studio Code

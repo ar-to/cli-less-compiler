@@ -1,11 +1,12 @@
 {
-  "name": "lessvsc",
-  "version": "1.0.0",
-  "description": "Testing visual code integrated l;ess compiler setup with gulp",
+  "name": "cli-less-compiler",
+  "version": "0.1.1",
+  "description": "Testing visual code integrated less compiler setup with gulp",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "clean": "gulp clean:all"
+    "clean": "gulp clean:all",
+    "clean:dist": "gulp clean:dist"
   },
   "author": "ar-to",
   "license": "ISC",
@@ -14,7 +15,6 @@
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-changed": "^3.0.0",
     "gulp-less": "^3.3.0",
     "gulp-watch": "^4.3.11",
     "run-sequence": "^1.2.2"
