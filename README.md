@@ -2,6 +2,8 @@
 
 NodeJS and NPM are required to run this tool. 
 
+### Getting Started
+
 Run the following commands to get started:
 
 ```
@@ -24,25 +26,36 @@ const DEST = 'dist';
 
 ```
 
-To delete the dist folder with your main.css and any other css files inside directory folders run the follwoing command:
+To delete the dist folder with your main.css and any other css files inside directory folders run the following command:
 
 ```
-npm run clean or gulp clean:all
+npm run clean
 ```
 
-This tool allows you to keep main.css files inside the folders which you asked to compile the less file from but also makes a single copy to the choosen output directory. Meaning that as you compile more less files, each folder containing this file will have a coresponding css file but also a single css file in the dist folder. The css files in the dist folder will be overwritten everytime you compile a new less file in any other directory but each of the individual css files within these folders will stay specific to that less file.
+This tool allows you to watch multiple main.less files inside a directory and compile just the file changed into a dist folder. The css file in the dist folder will be overwritten every time you compile a new less file in any other directory.
 
-In addition to using the CLI to run these commands, this tool supports using it within Visual Studio Code by opening the repo directory as a project, then running the same commands above within the intergrated terminal:
+### Visual Studio Code
 
-```
-#open intergrated terminal inside vsc
-cmd + `
+In addition to using the CLI to run these commands, this tool supports using it within Visual Studio Code by opening the repo directory as a project, then running the same commands above within the integrated terminal. First open Command Palette in VSC with cmd(ctrl) + shift + P, type Configure Task Runner, then Others. You will now see a .vscode folder and a tasks.json file. Copy the task.json code from the repo into the directory you plan to use this tool for. See [vsc documentation](https://code.visualstudio.com/docs/languages/css) for more information.
 
-#run the same command above but with this shortcut
-ctrl + shift + B
+open integrated terminal inside vsc
 
-#stop watch use this shortcut and type 
-ctrl + shift + P
+run the same command above but with this shortcut
+cmd(ctrl) + shift + B
+
+stop watch
+cmd(ctrl) + shift + P
 "Task:Terminate Running Task"
 
-```
+#### VSC shortcuts
+
+Terminate task does not come with a shortcut but can be added by going to Code>Preferences>Keyboard Shortcuts. Search for terminate running task then add the the shortcut with your keyboard. For example:
+
+cmd(ctrl) + shift + alt(option) + P
+
+
+### Possible Improvements
+
+* This tool does not create a css copy inside each of the subdirectory folders where the less file is held, so a feature could be added for this.
+
+* Adding integrated terminal support for other editors (Atom, Sublime, etc)
