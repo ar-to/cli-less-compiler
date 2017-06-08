@@ -26,6 +26,12 @@ const DEST = 'dist';
 
 ```
 
+To run only the watch task without having to wait for the dist folder to clear:
+
+```
+npm run watch
+```
+
 To delete the dist folder with your main.css and any other css files inside directory folders run the following command:
 
 ```
@@ -39,6 +45,19 @@ npm run clean:dist
 ```
 
 This tool allows you to watch multiple main.less files inside a directory and compile just the file changed into a dist folder. The css file in the dist folder will be overwritten every time you compile a new less file in any other directory.
+
+### Adding to an existing repo
+
+Clone this repo then copy gulpfile.js and package.json into the desired repo. Then commit these changes or create/add the following to the .gitignore file to keep this tool locally only:
+
+```
+dist/
+gulpfile.js
+node_modules/
+package.json
+```
+
+You may need to commit the .gitignore changes or use any other git command to hide, such as git stash.
 
 ### Visual Studio Code
 
