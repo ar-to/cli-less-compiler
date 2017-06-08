@@ -6,7 +6,8 @@
   "scripts": {
     "start": "gulp",
     "clean": "gulp clean:all",
-    "clean:dist": "gulp clean:dist"
+    "clean:dist": "gulp clean:dist",
+    "watch": "gulp watch-less"
   },
   "author": "ar-to",
   "license": "ISC",
