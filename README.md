@@ -9,6 +9,8 @@ Run the following commands to get started:
 ```
 git clone https://github.com/ar-to/cli-less-compiler.git
 
+cd cli-less-compiler
+
 npm install
 
 npm start
@@ -17,6 +19,9 @@ npm start
 ctrl + C
 
 ```
+`npm start` cleans dist directory and starts watching for chamges
+
+### Configure
 
 Change the source parent directory and the destination by changing the following inside the gulpfile.js
 
@@ -48,7 +53,7 @@ This tool allows you to watch multiple main.less files inside a directory and co
 
 ### Adding to an existing repo
 
-Clone this repo then copy gulpfile.js and package.json into the desired repo. Then commit these changes or create/add the following to the .gitignore file to keep this tool locally only:
+Clone this repo then copy gulpfile.js and package.json into the desired repo. Then commit these changes or create/add the following to the .gitignore file to keep this tool locally only or add them to the .git/info/exclude file to ignore them locally without having to change the .gitignore file and commit it:
 
 ```
 dist/
