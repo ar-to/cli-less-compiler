@@ -11,9 +11,9 @@ NodeJS and NPM are required to run this tool.
 Run the following commands to get started:
 
 ```
-git clone https://github.com/ar-to/cli-less-compiler.git
+git clone git@github.com:ar-to/batch-watch.git
 
-cd cli-less-compiler
+cd batch-watch
 
 npm install
 
@@ -102,6 +102,13 @@ cmd(ctrl) + shift + alt(option) + P
 
 * Adding integrated terminal support for other editors (Atom, Sublime, etc)
 
-* Add config file for variables that can changed for src and dest
+* Add config file for variables that can changed for src and dest:
+
+    - working: config file for src works for changing the value
+    - needs work: cannont add multiple directories to gulpfile from donfig file -- ar-to
 
 * Add gulp task to support sass
+
+* Add error log to watch build
+
+    - problem: https://github.com/ar-to/batch-watch/issues/1
