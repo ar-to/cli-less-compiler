@@ -1,7 +1,7 @@
 {
-  "name": "cli-less-compiler",
-  "version": "0.1.1",
-  "description": "Testing visual code integrated less compiler setup with gulp",
+  "name": "batch-watch",
+  "version": "0.2.0",
+  "description": "Use gulp tasks to watch and compile less, sass, etc, for an entire directory to a single folder",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
@@ -19,5 +19,8 @@
     "gulp-less": "^3.3.0",
     "gulp-watch": "^4.3.11",
     "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "config": "^1.26.2"
   }
 }

@@ -1,8 +1,10 @@
-# CLI-Less-Compiler
+# Batch-Watch
+
+Use gulp tasks to watch and compile less, sass, etc, for an entire directory to a single folder.
+
+## Getting Started
 
 NodeJS and NPM are required to run this tool. 
-
-### Getting Started
 
 Run the following commands to get started:
 
@@ -21,7 +23,7 @@ ctrl + C
 ```
 `npm start` cleans dist directory and starts watching for chamges
 
-### Configure
+## Configure
 
 Change the source parent directory and the destination by changing the following inside the gulpfile.js
 
@@ -51,7 +53,7 @@ npm run clean:dist
 
 This tool allows you to watch multiple main.less files inside a directory and compile just the file changed into a dist folder. The css file in the dist folder will be overwritten every time you compile a new less file in any other directory.
 
-### Adding to an existing repo
+## Adding to an existing repo
 
 Clone this repo then copy gulpfile.js and package.json into the desired repo. Then commit these changes or create/add the following to the .gitignore file to keep this tool locally only or add them to the .git/info/exclude file to ignore them locally without having to change the .gitignore file and commit it:
 
@@ -64,7 +66,7 @@ package.json
 
 You may need to commit the .gitignore changes or use any other git command to hide, such as git stash.
 
-### Visual Studio Code
+## Visual Studio Code
 
 In addition to using the CLI to run these commands, this tool supports using it within Visual Studio Code by opening the repo directory as a project, then running the same commands above within the integrated terminal. First open Command Palette in VSC with cmd(ctrl) + shift + P, type Configure Task Runner, then Others. You will now see a .vscode folder and a tasks.json file. Copy the task.json code from the repo into the directory you plan to use this tool for. See [vsc documentation](https://code.visualstudio.com/docs/languages/css) for more information.
 
@@ -89,3 +91,7 @@ cmd(ctrl) + shift + alt(option) + P
 * This tool does not create a css copy inside each of the subdirectory folders where the less file is held, so a feature could be added for this.
 
 * Adding integrated terminal support for other editors (Atom, Sublime, etc)
+
+* Add config file for variables that can changed
+
+* Add gulp task to support sass

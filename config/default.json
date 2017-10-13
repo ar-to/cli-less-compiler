@@ -1,0 +1,6 @@
+{
+    "SRC" : {
+        "dir_one" : "../Themes/**/",
+        "file" : "main.less"
+    }
+}
