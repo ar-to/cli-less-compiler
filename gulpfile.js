@@ -9,11 +9,6 @@ const path = require('path');
 const runSequence = require('run-sequence');
 const config = require('config');//define a set of default parameters, and extend them for different deployment environments 
 const srcConfig = config.get('SRC');
-// const config = {
-//   dir_one : '../Themes/**/',
-//   file: 'main.less'
-// }
-
 
 const SRC = [srcConfig.dir_one + srcConfig.file, '!./styles.less'];//checks only files
 const DEST = 'dist';

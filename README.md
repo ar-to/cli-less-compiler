@@ -2,6 +2,8 @@
 
 Use gulp tasks to watch and compile less, sass, etc, for an entire directory to a single folder.
 
+[![Build Status](https://travis-ci.org/ar-to/batch-watch.svg?branch=master)](https://travis-ci.org/ar-to/batch-watch)
+
 ## Getting Started
 
 NodeJS and NPM are required to run this tool. 
@@ -25,7 +27,15 @@ ctrl + C
 
 ## Configure
 
-Change the source parent directory and the destination by changing the following inside the gulpfile.js
+Change the source parent directory and the destination by modifying the config/default.json
+
+```
+    "SRC" : {
+        "dir_one" : "../Themes/**/",
+        "file" : "main.less"
+    }
+```
+or changing the following inside the gulpfile.js
 
 ```
 const SRC = ['./**/main.less', '!./styles.less'];//checks only files
@@ -92,6 +102,6 @@ cmd(ctrl) + shift + alt(option) + P
 
 * Adding integrated terminal support for other editors (Atom, Sublime, etc)
 
-* Add config file for variables that can changed
+* Add config file for variables that can changed for src and dest
 
 * Add gulp task to support sass
