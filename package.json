@@ -21,6 +21,6 @@
     "run-sequence": "^1.2.2"
   },
   "dependencies": {
-    "config": "^1.26.2"
+    "config": "^1.27.0"
   }
 }

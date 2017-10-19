@@ -6,8 +6,8 @@ const del = require('del');
 const watch = require('gulp-watch');
 const chokidar = require('chokidar');//required by gulp-watch; https://github.com/paulmillr/chokidar#path-filtering
 const path = require('path');
-const runSequence = require('run-sequence');
-const config = require('config');//define a set of default parameters, and extend them for different deployment environments 
+const runSequence = require('run-sequence').use(gulp);
+const config = require('config');//define a set of default parameters, and extend them for different deployment environments
 const srcConfig = config.get('SRC');
 
 const SRC = [srcConfig.dir_one + srcConfig.file, '!./styles.less'];//checks only files
